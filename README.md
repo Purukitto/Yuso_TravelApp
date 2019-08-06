@@ -24,6 +24,6 @@
 
 
 
-![alt text](https://github.com/pranjaldatta/Yuso-NECHackathonProject/blob/master/git_assests/return%200.png "Team Return 0;")
+![alt text](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/git_assests/return0%3B.png "Team Return 0;")
 
 
