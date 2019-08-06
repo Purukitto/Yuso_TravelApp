@@ -8,13 +8,13 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
 
 #### Project Members: 
 
-   * Pranjal Datta
+   * [Pranjal Datta](https://github.com/pranjaldatta)
 
-   * Pulkit Sambhavi Singh
+   * [Pulkit Sambhavi Singh](https://github.com/Purukitto)
 
-   * Aniket Sinha
+   * [Aniket Sinha](https://github.com/aniketkishore100)
 
-   * Akshat Joshi
+   * [Akshat Joshi](https://github.com/AkshatJoshi2000)
 
 
 
