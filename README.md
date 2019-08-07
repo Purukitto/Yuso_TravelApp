@@ -1,5 +1,6 @@
 # Yusō - Your Daily Travel Companion
 
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 
 Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 August, 2019 at Gurugram.
