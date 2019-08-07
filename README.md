@@ -1,7 +1,6 @@
 # Yusō - Your Daily Travel Companion
 
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)   [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
-
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)   [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/)
 
 
 Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 August, 2019 at Gurugram.
