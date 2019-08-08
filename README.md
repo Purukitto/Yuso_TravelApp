@@ -22,7 +22,7 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
 #### Cheat Sheet:  
     
     
-   [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet#code)
+   [Git Cheat Sheet](https://drive.google.com/open?id=1B_3exC66R9YMS6vmzBYhjqoEA-SHobgm)
 
 #### How to Contribute?
      
