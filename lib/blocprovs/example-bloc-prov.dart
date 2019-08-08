@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:example/blocs/example-bloc.dart';
+import 'package:yuso/blocs/example-bloc.dart';
 
 class ExampleProvider extends InheritedWidget {
   final ExampleBloc bloc;
