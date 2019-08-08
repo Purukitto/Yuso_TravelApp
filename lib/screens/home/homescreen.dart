@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:exampleapp/screens/example1/components/body.dart';
+import 'package:yuso/screens/home/components/body.dart';
 
 class ExScreen1 extends StatelessWidget {
   @override

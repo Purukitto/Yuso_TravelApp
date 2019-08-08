@@ -20,7 +20,6 @@ class ExampleApp extends StatelessWidget {
         initialRoute: '/',
         routes: <String, WidgetBuilder>{
           "/": (BuildContext context) => ExScreen1(),
-          "/ExScreen2": (BuildContext context) => ExScreen2(),
         },
       ),
     );
