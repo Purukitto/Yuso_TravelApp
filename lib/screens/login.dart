@@ -10,7 +10,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    
+   
+
     final logo =  Hero(
       tag: 'hero',
       child: CircleAvatar(
@@ -28,12 +29,13 @@ class _LoginPageState extends State<LoginPage> {
       autofocus: false,
   
       decoration: InputDecoration(
+         prefixIcon: Icon(Icons.search),
 
         filled: true,
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
-        fillColor: Color.fromRGBO(255, 214, 131, 1),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+        fillColor: Color.fromRGBO(255, 222, 115, 1),
       ),
     );
 
@@ -41,30 +43,35 @@ class _LoginPageState extends State<LoginPage> {
       autofocus: false,
       obscureText: true,
       decoration: InputDecoration(
+         prefixIcon: Icon(Icons.search),
         filled: true,
         hintText: 'Password',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0),),
-        fillColor: Color.fromRGBO(255, 214, 131, 1),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),),
+        fillColor: Color.fromRGBO(255, 222, 115, 1),
       ),
       
     );
 
     final loginButton = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0),
+      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 100.0),
       
       child: RaisedButton(
-
+        
+    
         shape: RoundedRectangleBorder(
-      
-          borderRadius: BorderRadius.circular(24),
+           
+          borderRadius: BorderRadius.circular(10),
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(null);
         },
         padding: EdgeInsets.all(12),
-        color: Color.fromRGBO(255, 214, 131, 1),
+        color: Color.fromRGBO(255, 222, 115, 1),
+ 
         child: Text('Log In', style: TextStyle(color: Colors.white)),
+
+ 
       ),
     );
 
@@ -85,8 +92,7 @@ class _LoginPageState extends State<LoginPage> {
     );
 
 
-
-    return Scaffold(
+     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
         child: ListView(
@@ -102,12 +108,15 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 24.0),
             loginButton,
             forgotLabel,
-            SizedBox(height: 100.0,),
+            SizedBox(height: 96.0),
             signin
           ],
         ),
       ),
     );
-  }
+  
+  
 }
-    
+}
+
+
