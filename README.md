@@ -29,14 +29,19 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
    [Git Cheat Sheet](https://drive.google.com/open?id=1B_3exC66R9YMS6vmzBYhjqoEA-SHobgm)
    
    
- <br>
+<br>
+
+#### Steps to sync fork with master:
+    $ git fetch upstream
+    $ git checkout master
+    $ git merge upstream/master
+    // Then create a pull request in browser
 <br>
 
  #### Fonts:  
    ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
    ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
-<br>
-<br>
+<br>>
 
 #### How to Contribute?
      
@@ -44,7 +49,6 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
      
    Fill by 8th August
 
-<br>
 <br>
 
 
@@ -57,8 +61,7 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
    * The **models folder** has files each with a custom class of an object widely used throughout the app
    * The **blocs and blocprovs folders** are both pretty straightforward, with each holding a file with a BLoC and a BLoC Provider in it respectively
    * The **screens folder** holds many different folders, each of which corresponds to a different screen of the app. Each screen folder holds two things: a primary screen file which serves to organize each component, and a “components” folder which holds each component in its own separate file. Any piece of a screen more complicated then a few widgets should be its own component.
-     
-  <br>
+
 <br>
 
 #### Links
