@@ -6,8 +6,8 @@ the caching feature to increase functionality . So the structuring/routing will 
  */
 
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import './auth/register.dart';
+//import 'package:flutter/rendering.dart';
+//import './auth/register.dart';
 import './SplashScreen.dart';
 
 class Index extends StatelessWidget {

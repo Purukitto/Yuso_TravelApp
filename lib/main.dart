@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:yuso/screens/home/homescreen.dart';
+//import 'package:yuso/screens/home/homescreen.dart';
 import 'screens/index.dart';
-import 'screens/auth/register.dart';
+//import 'screens/auth/register.dart';
 
-void main() 
-  runApp(Yuso());
+void main() {
+  runApp(
+    new Yuso(),
+  );
 }
 
 class Yuso extends StatelessWidget {

@@ -26,12 +26,15 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.all(80),
+                padding: EdgeInsets.all(40),
               ),
               CircleAvatar(
                 backgroundColor: Colors.transparent,
                 radius: 200.0,
                 child: Image.asset("assets/logo-03.png"),
+              ),
+              Container(
+                height: 150,
               ),
               Text(
                 "Your Daily Travel Companion",
