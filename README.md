@@ -23,6 +23,12 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
     
     
    [Git Cheat Sheet](https://drive.google.com/open?id=1B_3exC66R9YMS6vmzBYhjqoEA-SHobgm)
+   
+   
+ 
+ #### Fonts:  
+   ##### UI Text : [Roboto Condensed](https://fonts.google.com/specimen/Roboto)
+   ##### Text Fields : [Open Sans Light](https://fonts.google.com/specimen/Open+Sans)
 
 #### How to Contribute?
      
