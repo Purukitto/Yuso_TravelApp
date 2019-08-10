@@ -61,7 +61,6 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
    * The **services folder** holds the web APIs and native interaction code
    * The **components folder** has custom widgets to be used in multiple different screens
    * The **models folder** has files each with a custom class of an object widely used throughout the app
-   * The **blocs and blocprovs folders** are both pretty straightforward, with each holding a file with a BLoC and a BLoC Provider in it respectively
    * The **screens folder** holds many different folders, each of which corresponds to a different screen of the app. Each screen folder holds two things: a primary screen file which serves to organize each component, and a “components” folder which holds each component in its own separate file. Any piece of a screen more complicated then a few widgets should be its own component.
 
 <br>
