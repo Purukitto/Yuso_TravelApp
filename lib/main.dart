@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
+mport 'package:flutter/material.dart';
 import 'package:yuso/theme/style.dart';
 import 'package:yuso/screens/home/homescreen.dart';
 
 void main() {
-  runApp(ExampleApp());
+  runApp(Yuso());
 }
 
-class ExampleApp extends StatelessWidget {
+class Yuso extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
