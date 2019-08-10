@@ -1,3 +1,7 @@
+# Pubspec
+.yaml
+.lock
+
 # Miscellaneous
 *.class
 *.log
