@@ -35,13 +35,14 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
     $ git fetch upstream
     $ git checkout master
     $ git merge upstream/master
-    // Then create a pull request in browser
+    Then create a pull request in browser
 <br>
 
  #### Fonts:  
    ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
    ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
-<br>>
+   
+<br>
 
 #### How to Contribute?
      
