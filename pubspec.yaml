@@ -42,9 +42,18 @@ flutter:
 
   uses-material-design: true
 
+  fonts:
+    - family : Roboto
+      fonts:
+        - asset : lib/assets/fonts/Roboto-Thin.ttf
+
+    - family : Open Sans
+      fonts:
+        - asset : lib/assets/fonts/OpenSans-Light.ttf
+  
   assets:
     - assets/images/
-
+    
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
