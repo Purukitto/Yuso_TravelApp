@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  theme: ThemeData(primaryColor: Colors.red, accentColor: Colors.yellowAccent),
-  debugShowCheckedModeBanner: false,
-  home: SplashScreenComp(),
-)
-);
+      theme:
+          ThemeData(primaryColor: Colors.red, accentColor: Colors.yellowAccent),
+      debugShowCheckedModeBanner: false,
+      home: SplashScreenComp(),
+    ));
 
 class SplashScreenComp extends StatefulWidget {
   @override
@@ -23,27 +23,23 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
             decoration: BoxDecoration(color: Color.fromRGBO(255, 222, 115, 1)),
           ),
           Column(
-
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              Padding(padding: EdgeInsets.all(80),),
-              
+              Padding(
+                padding: EdgeInsets.all(80),
+              ),
               CircleAvatar(
                 backgroundColor: Colors.transparent,
-                
                 radius: 200.0,
-                  
-                  child: Image.asset("assets/logo1.png"),
-                  
-                ),
+                child: Image.asset("assets/logo-03.png"),
+              ),
               Text(
-                
-                    "Your Daily Travel Companion", style: TextStyle(
-                      color: Color(0xFFf4f4f2), 
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold
-                      ),
-                  ),
+                "Your Daily Travel Companion",
+                style: TextStyle(
+                    color: Color(0xFFf4f4f2),
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ],
