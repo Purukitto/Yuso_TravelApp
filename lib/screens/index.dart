@@ -5,7 +5,7 @@ NOTE : AS OF NOW we are assuming the app is no cache to store logins. Once the a
 the caching feature to increase functionality . So the structuring/routing will change then.
  */
 
-//Change login/register/SplashScreen as per need
+//Change login/register/SplashScreen as per need (for now)
 
 import 'package:flutter/material.dart';
 import './auth/login.dart';
