@@ -32,10 +32,8 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
 <br>
 
 #### Steps to sync fork with master:
-    $ git fetch upstream
     $ git checkout master
-    $ git merge upstream/master
-    Then create a pull request in browser
+    $ git pull
 <br>
 
  #### Fonts:  
