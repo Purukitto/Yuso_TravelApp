@@ -41,6 +41,7 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
  #### Fonts:  
    ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
    ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
+   ##### Poster Font : [Bebas Neue](https://www.fonts.com/font/flat-it/bebas-neue)
    
 <br>
 
@@ -78,8 +79,6 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
 <br>
 <br>
 <br>
-
-
 
 ![alt text](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/git_assests/return%200.png "Team Return 0;")
 
