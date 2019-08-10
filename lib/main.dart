@@ -13,21 +13,12 @@ class Yuso extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Yuso',
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         "/": (BuildContext context) => Index(),
       },
-    );
-  }
-}
-
-class YusoStart extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      initialRoute: '/',
-      routes: <String, WidgetBuilder>{'/': (BuildContext context) => Index()},
     );
   }
 }
