@@ -27,8 +27,8 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
    
  
  #### Fonts:  
-   ##### UI Text : [Roboto Condensed](https://fonts.google.com/specimen/Roboto)
-   ##### Text Fields : [Open Sans Light](https://fonts.google.com/specimen/Open+Sans)
+   ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
+   ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
 
 #### How to Contribute?
      
