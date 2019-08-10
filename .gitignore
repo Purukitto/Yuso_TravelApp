@@ -1,6 +1,6 @@
 # Pubspec
-.yaml
-.lock
+*.yaml
+*.lock
 
 # Miscellaneous
 *.class
