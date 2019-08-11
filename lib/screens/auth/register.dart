@@ -19,7 +19,6 @@ class MainRegisterComp extends StatefulWidget {
 
 class MainRegisterCompState extends State<MainRegisterComp> {
   final _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     return new GestureDetector(
@@ -38,7 +37,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                 child: Container(
                     padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
                     child: Image.asset(
-                      'lib/assets/static/logo.png',
+                      'lib/assets/static/logo_icon.png',
                       height: 200,
                       width: 200,
                     )),
@@ -49,7 +48,6 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                 height: 60.0,
                 padding: EdgeInsets.fromLTRB(25, 0, 0, 20),
                 child: TextFormField(
-   
                   decoration: InputDecoration(
                     prefixIcon: Icon(Icons.account_circle),
                     labelText: "Name",
@@ -63,7 +61,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     filled: true,
                     fillColor: Color.fromRGBO(248, 234, 192, .5),
                   ),
-                 ),
+                ),
               )),
               Center(
                 child: Container(
