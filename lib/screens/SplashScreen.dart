@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yuso/screens/Auth/login.dart';
+import './auth/login.dart';
 import 'dart:async';
 import 'package:yuso/theme/colors.dart';
 
