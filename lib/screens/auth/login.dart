@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yuso/theme/colors.dart';
+import 'package:yuso/assets/icons/custom_icons1_icons.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
@@ -27,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.search),
+        prefixIcon: const Icon(CustomIcons1.user),
         filled: true,
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
