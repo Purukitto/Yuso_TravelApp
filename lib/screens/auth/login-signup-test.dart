@@ -131,14 +131,14 @@ class _LoginPageState extends State<LoginPage> {
    
 
      const Text("Don't have an account ?",style:TextStyle(color: primaryBlack, fontWeight: FontWeight.bold)),
-     Padding(padding:  EdgeInsets.only(left:0),
-     child:FlatButton(
-       
+     Padding(
+       padding:  EdgeInsets.only(left:0),
+     child:GestureDetector(
+       onTap: null,
         child: Text(
-        "Sign up",
+        " Sign up",
         style: TextStyle(color: primaryYellow,fontWeight: FontWeight.bold),
       ),
-      onPressed: () {},
     ),
      ),
   
