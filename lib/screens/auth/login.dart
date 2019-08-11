@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
         filled: true,
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(100.0)),
         fillColor: Color.fromRGBO(255, 222, 115, 1),
       ),
     );
@@ -41,12 +41,12 @@ class _LoginPageState extends State<LoginPage> {
       autofocus: false,
       obscureText: true,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.search),
+        prefixIcon: Icon(CustomIcons1.fingerprint),
         filled: true,
         hintText: 'Password',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(100.0),
         ),
         fillColor: Color.fromRGBO(255, 222, 115, 1),
       ),
