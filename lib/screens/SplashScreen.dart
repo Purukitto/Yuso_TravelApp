@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:yuso/theme/colors.dart';
 
 class SplashScreenComp extends StatefulWidget {
@@ -55,7 +54,6 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
                       color: Color(0xFFf4f4f2),
                       fontSize: 20.0,
                       fontFamily: 'OpenSans-Light',
-                      //fontWeight: FontWeight.bold),
                     ),
                   ))
             ],
