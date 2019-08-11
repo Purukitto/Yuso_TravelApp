@@ -16,7 +16,7 @@ class _LoginPageState extends State<LoginPage> {
         backgroundColor: Colors.transparent,
         radius: 100.0,
         child: Image.asset(
-          'assets/images/logo_icon.png',
+          'lib/assets/static/logo_icon.png',
           color: primaryYellow,
           fit: BoxFit.cover,
         ),

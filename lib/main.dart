@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/login.dart';
-//import 'screens/auth/register.dart';
+import 'screens/index.dart';
 
 void main() {
   runApp(
@@ -16,7 +16,7 @@ class Yuso extends StatelessWidget {
       title: 'Yuso',
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        "/": (BuildContext context) => LoginPage(),
+        "/": (BuildContext context) => Index(),
       },
     );
   }
