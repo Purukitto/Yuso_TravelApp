@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yuso/theme/colors.dart';
+import 'package:yuso/assets/icons/custom_icons1_icons.dart';
 
 class LoginPage extends StatefulWidget {
   static String tag = 'login-page';
@@ -10,8 +11,6 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-
-    
     final logo = Hero(
       tag: 'hero',
       child: CircleAvatar(
@@ -29,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.person),
+        prefixIcon: const Icon(CustomIcons1.user),
         filled: true,
         hintText: 'Email', hintStyle:TextStyle(color: primaryBlack),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -45,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
       autofocus: false,
       obscureText: true,
       decoration: InputDecoration(
-        prefixIcon: Icon(Icons.fingerprint),
+        prefixIcon: Icon(CustomIcons1.fingerprint),
         filled: true,
         hintText: 'Password',hintStyle:TextStyle(color: primaryBlack),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -118,10 +117,6 @@ class _LoginPageState extends State<LoginPage> {
         },
         padding: EdgeInsets.all(12),
         color: primaryYellow,
- 
-        
-
- 
       ),
     );
 
@@ -141,45 +136,36 @@ class _LoginPageState extends State<LoginPage> {
       onPressed: () {},
     ),
      ),
-  
-    
-
-        
   ]
 );
-    
-  
 
     return new GestureDetector(
-      onTap: () {
-        FocusScope.of(context).unfocus();
-      },
-      child: Scaffold(
-      
-      backgroundColor: Colors.white,
-      body: Center(
-        child: ListView(
-          shrinkWrap: true,
-          padding: EdgeInsets.only(left: 24.0, right: 24.0),
-          children: <Widget>[
-            SizedBox(height: 40.0),
-            logo,
-            SizedBox(height: 70.0),
-            email,
-            SizedBox(height: 8.0),
-            password,
-            forgotLabel,
-            SizedBox(height: 0.0),
-            loginButton,
-            SizedBox(height: 0.0),
-            google_signin,
-            SizedBox(height: 15.0),
-            signin
-          ],
-        ),
-      ),
-      )
-    );
-
+        onTap: () {
+          FocusScope.of(context).unfocus();
+        },
+        child: Scaffold(
+          backgroundColor: Colors.white,
+          body: Center(
+            child: ListView(
+              shrinkWrap: true,
+              padding: EdgeInsets.only(left: 24.0, right: 24.0),
+              children: <Widget>[
+                SizedBox(height: 40.0),
+                logo,
+                SizedBox(height: 70.0),
+                email,
+                SizedBox(height: 8.0),
+                password,
+                forgotLabel,
+                SizedBox(height: 0.0),
+                loginButton,
+                SizedBox(height: 0.0),
+                googleSignIn,
+                SizedBox(height: 15.0),
+                signin
+              ],
+            ),
+          ),
+        ));
   }
 }
