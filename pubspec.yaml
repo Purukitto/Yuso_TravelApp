@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  splashscreen:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -38,13 +39,31 @@ flutter:
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
+
   uses-material-design: true
 
+  fonts:
+    - family : Roboto
+      fonts:
+        - asset : lib/assets/fonts/Roboto-Thin.ttf
+
+    - family : Open Sans
+      fonts:
+        - asset : lib/assets/fonts/OpenSans-Light.ttf
+    
+    - family:  CustomIcons1
+      fonts:
+        - asset: lib/assets/icons/CustomIcons1.ttf
+  
+  assets:
+    - lib/assets/static/logo_icon.png
+    - lib/assets/static/logo_full.png
+    - lib/assets/static/logo.png
+    
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

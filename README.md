@@ -2,9 +2,12 @@
 
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg?style=plastic)](https://github.com/996icu/996.ICU/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/)
 
+<br>
+
 
 Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 August, 2019 at Gurugram.
 
+<br>
 
 
 #### Project Members: 
@@ -17,12 +20,28 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
 
    * [Akshat Joshi](https://github.com/AkshatJoshi2000)
 
+<br>
 
 
 #### Cheat Sheet:  
     
     
    [Git Cheat Sheet](https://drive.google.com/open?id=1B_3exC66R9YMS6vmzBYhjqoEA-SHobgm)
+   
+   
+<br>
+
+#### Steps to sync fork with master:
+    $ git checkout master
+    $ git pull
+<br>
+
+ #### Fonts:  
+   ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
+   ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
+   ##### Poster Font : [Bebas Neue](https://www.fonts.com/font/flat-it/bebas-neue)
+   
+<br>
 
 #### How to Contribute?
      
@@ -30,6 +49,7 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
      
    Fill by 8th August
 
+<br>
 
 
 #### File Oraganisation
@@ -39,10 +59,10 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
    * The **services folder** holds the web APIs and native interaction code
    * The **components folder** has custom widgets to be used in multiple different screens
    * The **models folder** has files each with a custom class of an object widely used throughout the app
-   * The **blocs and blocprovs folders** are both pretty straightforward, with each holding a file with a BLoC and a BLoC Provider in it respectively
    * The **screens folder** holds many different folders, each of which corresponds to a different screen of the app. Each screen folder holds two things: a primary screen file which serves to organize each component, and a “components” folder which holds each component in its own separate file. Any piece of a screen more complicated then a few widgets should be its own component.
-     
-  
+
+<br>
+
 #### Links
 
 * [Graphic Resources](https://drive.google.com/drive/folders/1cJyXY8Wvlw7dEBQykcS5a6TtYTesiKyw?usp=sharing)
@@ -53,8 +73,9 @@ Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 A
 
 
 
-
-
+<br>
+<br>
+<br>
 
 ![alt text](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/git_assests/return%200.png "Team Return 0;")
 

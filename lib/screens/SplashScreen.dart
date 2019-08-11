@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 void main() => runApp(MaterialApp(
-      theme:
-          ThemeData(primaryColor: Colors.red, accentColor: Color(0xFFf4f4f2)),
+      theme: ThemeData(primaryColor: Colors.red, accentColor: Colors.yellowAccent),
       debugShowCheckedModeBanner: false,
       home: SplashScreenComp(),
     ));
