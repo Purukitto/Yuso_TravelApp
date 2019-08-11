@@ -18,7 +18,7 @@ class _LoginPageState extends State<LoginPage> {
         radius: 100.0,
         child: Image.asset(
           'lib/assets/static/logo_icon.png',
-          color: primaryYellow,
+          color:primaryYellow,
           fit: BoxFit.cover,
         ),
       ),
@@ -30,12 +30,13 @@ class _LoginPageState extends State<LoginPage> {
       decoration: InputDecoration(
         prefixIcon: const Icon(CustomIcons1.user),
         filled: true,
-        hintText: 'Email',
+        hintText: 'Email', hintStyle:TextStyle(color: primaryBlack),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-            borderRadius: BorderRadius.circular(100.0)),
-        fillColor: Color.fromRGBO(255, 222, 115, 1),
+          borderSide: BorderSide.none,
+          borderRadius: BorderRadius.circular(100.0)
+          ),
+        fillColor: primaryYellow,
       ),
     );
 
@@ -45,71 +46,98 @@ class _LoginPageState extends State<LoginPage> {
       decoration: InputDecoration(
         prefixIcon: Icon(CustomIcons1.fingerprint),
         filled: true,
-        hintText: 'Password',
+        hintText: 'Password',hintStyle:TextStyle(color: primaryBlack),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(100.0),
         ),
-        fillColor: Color.fromRGBO(255, 222, 115, 1),
+        fillColor: primaryYellow,
       ),
     );
 
-    final forgotLabel = FlatButton(
+    final forgotLabel = Padding(
+      padding: EdgeInsets.symmetric(horizontal: 80.0),
+
+      child: FlatButton(
       child: Text(
         'Forgot password?',
-        style: TextStyle(color: Colors.black),
+        style: TextStyle(color: primaryBlack),
       ),
       onPressed: () {},
+    )
     );
+    
+     
 
     final loginButton = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 120.0),
-      child: RaisedButton(
-        elevation: 0,
+      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 100.0),
+      child: OutlineButton(
+        borderSide: BorderSide(
+            color: primaryYellow, 
+            style: BorderStyle.solid,
+            width: 2.0, 
+          ),
+
+        
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(5.0), 
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(null);
         },
+        
         padding: EdgeInsets.all(12),
-        color: Color.fromRGBO(255, 222, 115, 1),
-        child: Text('Sign In', style: TextStyle(color: Colors.black)),
+        color: primaryWhite,
+        child: Text('Log In', style: TextStyle(color: primaryBlack)),
       ),
     );
 
-    final googleSignIn = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 70.0),
+    
+     final google_signin  = Padding(
+      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 50.0),
+      
       child: RaisedButton(
         elevation: 0,
         child: new Row(
-          children: <Widget>[
-            new Icon(CustomIcons1.google),
-            new Text(
-              "Sign in with Google",
-              style: TextStyle(color: Colors.black),
-            ),
-          ],
-        ),
+                children: <Widget>[
+                  new Icon(Icons.group_work, color: Colors.black54),
+                  new Text("    Sign in with Google",style: TextStyle(color: primaryBlack)),
+                  
+            
+                ],
+              ),
+ 
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+       
+          borderRadius: BorderRadius.circular(100),
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(null);
         },
         padding: EdgeInsets.all(12),
-        color: Color.fromRGBO(255, 222, 115, 1),
+        color: primaryYellow,
       ),
     );
 
-    final signin = FlatButton(
-      child: Text(
-        "Don't have an account ?",
-        style: TextStyle(color: Colors.black),
+    final signin = Row(
+  children: <Widget>[
+    new Container(width: 50,),
+   
+
+     const Text("Don't have an account ?",style:TextStyle(color: primaryBlack, fontWeight: FontWeight.bold)),
+     Padding(padding:  EdgeInsets.only(left:0),
+     child:FlatButton(
+       
+        child: Text(
+        "Sign up",
+        style: TextStyle(color: primaryYellow,fontWeight: FontWeight.bold),
       ),
       onPressed: () {},
-    );
+    ),
+     ),
+  ]
+);
 
     return new GestureDetector(
         onTap: () {
