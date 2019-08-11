@@ -17,7 +17,7 @@ class Index extends StatelessWidget{
   @override 
   Widget build(BuildContext context){
     return Scaffold(
-      body: MainRegisterComp(),
+      body: LoginPage(),
     );
   }
 }
