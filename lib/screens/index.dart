@@ -12,10 +12,9 @@ import './auth/login.dart';
 import './auth/register.dart';
 import './SplashScreen.dart';
 
-
-class Index extends StatelessWidget{
-  @override 
-  Widget build(BuildContext context){
+class Index extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: LoginPage(),
     );

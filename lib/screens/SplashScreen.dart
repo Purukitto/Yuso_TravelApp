@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-
-void main() => runApp(MaterialApp(
-      theme:
-          ThemeData(primaryColor: Colors.red, accentColor: Colors.yellowAccent),
-      debugShowCheckedModeBanner: false,
-      home: SplashScreenComp(),
-    ));
+import 'dart:async';
+import 'package:yuso/theme/colors.dart';
 
 class SplashScreenComp extends StatefulWidget {
   @override
@@ -13,6 +8,13 @@ class SplashScreenComp extends StatefulWidget {
 }
 
 class _SplashScreenCompState extends State<SplashScreenComp> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Timer(Duration(seconds: 5), () => print("Next Screen Now"));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +28,7 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.all(100),
+                padding: EdgeInsets.all(80),
               ),
               CircleAvatar(
                 backgroundColor: Colors.transparent,
@@ -34,7 +36,15 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
                 child: Image.asset("lib/assets/static/logo_full.png"),
               ),
               Container(
-                height: 30,
+                height: 50,
+                padding: EdgeInsets.only(bottom: 13),
+                child: CircularProgressIndicator(
+                  backgroundColor: primaryYellow,
+                  valueColor: new AlwaysStoppedAnimation<Color>(primaryWhite),
+                ),
+              ),
+              Container(
+                height: 50,
               ),
               Padding(
                   padding: EdgeInsets.fromLTRB(12, 0, 0, 0),
@@ -44,7 +54,6 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
                       color: Color(0xFFf4f4f2),
                       fontSize: 20.0,
                       fontFamily: 'OpenSans-Light',
-                      //fontWeight: FontWeight.bold),
                     ),
                   ))
             ],
