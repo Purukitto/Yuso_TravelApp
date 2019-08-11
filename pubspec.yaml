@@ -58,7 +58,7 @@ flutter:
   assets:
     - lib/assets/static/logo_icon.png
     - lib/assets/static/logo_full.png
-    - lib/assets/static/logo.png
+
     
   # To add assets to your application, add an assets section, like this:
   # assets:
