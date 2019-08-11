@@ -33,9 +33,8 @@ class _LoginPageState extends State<LoginPage> {
         hintText: 'Email',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
-          borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(20.0)
-          ),
+            borderSide: BorderSide.none,
+            borderRadius: BorderRadius.circular(100.0)),
         fillColor: Color.fromRGBO(255, 222, 115, 1),
       ),
     );
@@ -50,7 +49,7 @@ class _LoginPageState extends State<LoginPage> {
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(100.0),
         ),
         fillColor: Color.fromRGBO(255, 222, 115, 1),
       ),
@@ -65,38 +64,35 @@ class _LoginPageState extends State<LoginPage> {
     );
 
     final loginButton = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 100.0),
+      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 120.0),
       child: RaisedButton(
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(5),
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(null);
         },
         padding: EdgeInsets.all(12),
         color: Color.fromRGBO(255, 222, 115, 1),
-        child: Text('Log In', style: TextStyle(color: Colors.black)),
+        child: Text('Sign In', style: TextStyle(color: Colors.black)),
       ),
     );
 
-    
-     final google_signin  = Padding(
+    final googleSignIn = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 70.0),
-      
       child: RaisedButton(
         elevation: 0,
         child: new Row(
-                children: <Widget>[
-                  new Icon(Icons.search),
-                  new Text("Sign in with Google",style: TextStyle(color: Colors.black)),
-                  
-            
-                ],
-              ),
- 
+          children: <Widget>[
+            new Icon(CustomIcons1.google),
+            new Text(
+              "Sign in with Google",
+              style: TextStyle(color: Colors.black),
+            ),
+          ],
+        ),
         shape: RoundedRectangleBorder(
-       
           borderRadius: BorderRadius.circular(10),
         ),
         onPressed: () {
@@ -104,14 +100,8 @@ class _LoginPageState extends State<LoginPage> {
         },
         padding: EdgeInsets.all(12),
         color: Color.fromRGBO(255, 222, 115, 1),
- 
-        
-
- 
       ),
     );
-
-    
 
     final signin = FlatButton(
       child: Text(
@@ -138,7 +128,7 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 0.0),
             loginButton,
             SizedBox(height: 0.0),
-            google_signin,
+            googleSignIn,
             SizedBox(height: 15.0),
             signin
           ],
