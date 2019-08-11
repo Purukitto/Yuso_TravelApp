@@ -10,6 +10,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
+
+    
     final logo = Hero(
       tag: 'hero',
       child: CircleAvatar(
@@ -119,8 +121,14 @@ class _LoginPageState extends State<LoginPage> {
       ),
       onPressed: () {},
     );
+  
 
-    return Scaffold(
+    return new GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+      
       backgroundColor: Colors.white,
       body: Center(
         child: ListView(
@@ -143,6 +151,8 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
       ),
+      )
     );
+
   }
 }
