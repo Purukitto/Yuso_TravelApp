@@ -10,17 +10,11 @@ The Register Component consists of:
 
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:yuso/screens/home/home.dart' as prefix0;
 import 'dart:core';
-import '../home//home.dart';
-
-
 
 //class to handle POST requests i.e. serialization and deserialization
 class PostReq {
-  
   //declare here
   String username;
   String name;
@@ -32,46 +26,44 @@ class PostReq {
   PostReq({this.username, this.email, this.name, this.password, this.ph});
 
   //serialize here
-  Map toMap(){
-    
-    var map = new Map<String , dynamic>();
+  Map toMap() {
+    var map = new Map<String, dynamic>();
     map['username'] = username;
     map['name'] = name;
     map['email'] = email;
     map['password'] = password;
     map['ph'] = ph;
 
-    return map; 
-   
+    return map;
   }
 
   //unserialize here
-  factory PostReq.fromjson(Map<String , dynamic>json) {
+  factory PostReq.fromjson(Map<String, dynamic> json) {
     return PostReq(
-      username : json['username'],
-      email : json['email'],
-      name : json['name'],
-      password : json['password'],
-      ph : json['ph'],
+      username: json['username'],
+      email: json['email'],
+      name: json['name'],
+      password: json['password'],
+      ph: json['ph'],
     );
   }
 }
 
 // Finally Make the damn request, please
 //check readme regarding routing. fuss involved
-Future<String> sendRegisterDetails(String _host , String _path, {Map body} ) async{
-  return http.post(Uri.http("localhost:3333", "register" ) , body: body)
-             .then((http.Response response){
-               
-               int statusCode = response.statusCode;
+Future<String> sendRegisterDetails(String _host, String _path,
+    {Map body}) async {
+  return http
+      .post(Uri.http("localhost:3333", "register"), body: body)
+      .then((http.Response response) {
+    int statusCode = response.statusCode;
 
-               if(statusCode < 200 || statusCode > 400 ){
-                 throw new Exception("Error while posting info at sendRegisterDetails");
-               }
+    if (statusCode < 200 || statusCode > 400) {
+      throw new Exception("Error while posting info at sendRegisterDetails");
+    }
 
-               return ((response.body));
-             });
-
+    return ((response.body));
+  });
 }
 
 class MainRegisterComp extends StatefulWidget {
@@ -82,7 +74,6 @@ class MainRegisterComp extends StatefulWidget {
 }
 
 class MainRegisterCompState extends State<MainRegisterComp> {
-  
   final _formKey = GlobalKey<FormState>();
 
   //we define controllers to handle text in textformfields
@@ -94,13 +85,8 @@ class MainRegisterCompState extends State<MainRegisterComp> {
   var _host = "localhost:8000";
   var _path = "/register";
 
-
   @override
   Widget build(BuildContext context) {
-
-
-
-
     return new GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
@@ -246,28 +232,28 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                       color: Color.fromRGBO(248, 234, 192, 1),
                       width: 2.5,
                     ),
-                     
-                     
-                     //create the post request dart object
-                     onPressed: () async {
-                      PostReq newPost = new PostReq(username: usernameController.text, password: passwordController.text,
-                                               email: emailController.text, name: nameController.text, ph: phController.text,
-                      
-                     );
-                       
-                       //call the make request function
-                       String res = await sendRegisterDetails(_host, _path , body: newPost.toMap());
-                       
-                       if(res == "Successfully added"){
+
+                    //create the post request dart object
+                    onPressed: () async {
+                      PostReq newPost = new PostReq(
+                        username: usernameController.text,
+                        password: passwordController.text,
+                        email: emailController.text,
+                        name: nameController.text,
+                        ph: phController.text,
+                      );
+
+                      //call the make request function
+                      String res = await sendRegisterDetails(_host, _path,
+                          body: newPost.toMap());
+
+                      if (res == "Successfully added") {
                         //change screens wherever u want
-                         Navigator.of(context).pushReplacement(
-                         MaterialPageRoute(
-                           builder: (BuildContext context) => Dummy(),
-                         )
-                      
-                       );
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (BuildContext context) => LoginPage(),
+                        ));
                       }
-                     },
+                    },
 
                     elevation: 0,
                     label: Text(
