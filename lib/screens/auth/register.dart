@@ -11,6 +11,7 @@ The Register Component consists of:
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
+import 'package:yuso/screens/Auth/login.dart';
 import 'dart:core';
 
 //class to handle POST requests i.e. serialization and deserialization
