@@ -5,12 +5,12 @@
 <br>
 
 
-Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 August, 2019 at Gurugram.
+Yusō, was built as a collaborative project for enhancements in public transport.
 
 <br>
 
 
-#### Project Members: 
+#### Contributors: 
 
    * [Pranjal Datta](https://github.com/pranjaldatta)
 
