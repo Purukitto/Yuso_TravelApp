@@ -14,6 +14,7 @@ import 'package:http/http.dart' as http;
 import 'package:yuso/screens/Auth/login.dart';
 import 'dart:core';
 import 'package:yuso/assets/icons/custom_icons1_icons.dart';
+import 'package:yuso/theme/colors.dart';
 
 //class to handle POST requests i.e. serialization and deserialization
 class PostReq {
@@ -267,7 +268,27 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     ),
                   ),
                 ),
-              )
+              ),
+              Container(
+                child: RaisedButton(
+                  elevation: 0,
+                  child: new Row(
+                    children: <Widget>[
+                      new Icon(CustomIcons1.google, color: Colors.black54),
+                      new Text("    Sign in with Google",
+                          style: TextStyle(color: primaryBlack)),
+                    ],
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(null);
+                  },
+                  padding: EdgeInsets.all(12),
+                  color: primaryYellow,
+                ),
+              ),
             ]),
           ),
         ),
