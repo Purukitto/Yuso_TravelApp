@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
       autofocus: false,
       obscureText: true,
       decoration: InputDecoration(
-        prefixIcon: Icon(CustomIcons1.fingerprint),
+        prefixIcon: Icon(Icons.fingerprint),
         filled: true,
         hintText: 'Password',
         hintStyle: TextStyle(color: primaryBlack),
