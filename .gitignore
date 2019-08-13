@@ -12,6 +12,7 @@
 .buildlog/
 .history
 .svn/
+**/server/node_modules
 
 # IntelliJ related
 *.iml
