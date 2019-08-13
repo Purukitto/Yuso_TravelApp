@@ -117,43 +117,44 @@ class _LoginPageState extends State<LoginPage> {
           style: TextStyle(color: primaryBlack, fontWeight: FontWeight.bold)),
       Padding(
         padding: EdgeInsets.only(left: 0),
-        child: FlatButton(
+        child: GestureDetector(
+          onTap: null,
           child: Text(
-            "Sign up",
+            " Sign up",
             style: TextStyle(color: primaryYellow, fontWeight: FontWeight.bold),
           ),
-          onPressed: () {},
         ),
       ),
     ]);
 
     return new GestureDetector(
-        onTap: () {
-          FocusScope.of(context).unfocus();
-        },
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          body: Center(
-            child: ListView(
-              shrinkWrap: true,
-              padding: EdgeInsets.only(left: 24.0, right: 24.0),
-              children: <Widget>[
-                SizedBox(height: 40.0),
-                logo,
-                SizedBox(height: 70.0),
-                email,
-                SizedBox(height: 8.0),
-                password,
-                forgotLabel,
-                SizedBox(height: 0.0),
-                loginButton,
-                SizedBox(height: 0.0),
-                googleSignIn,
-                SizedBox(height: 15.0),
-                signin
-              ],
-            ),
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: ListView(
+            shrinkWrap: true,
+            padding: EdgeInsets.only(left: 24.0, right: 24.0),
+            children: <Widget>[
+              SizedBox(height: 40.0),
+              logo,
+              SizedBox(height: 70.0),
+              email,
+              SizedBox(height: 8.0),
+              password,
+              forgotLabel,
+              SizedBox(height: 0.0),
+              loginButton,
+              SizedBox(height: 0.0),
+              googleSignIn,
+              SizedBox(height: 15.0),
+              signin
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
