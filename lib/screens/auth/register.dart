@@ -13,6 +13,7 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:yuso/screens/Auth/login.dart';
 import 'dart:core';
+import 'package:yuso/assets/icons/custom_icons1_icons.dart';
 
 //class to handle POST requests i.e. serialization and deserialization
 class PostReq {
@@ -111,12 +112,14 @@ class MainRegisterCompState extends State<MainRegisterComp> {
               ),
               Center(
                   child: Container(
+                //TODO: Padding
                 width: 230.0,
                 height: 60.0,
                 padding: EdgeInsets.fromLTRB(25, 0, 0, 20),
+                //TODO: Make a row to make all childs
                 child: TextFormField(
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.account_circle),
+                    prefixIcon: Icon(CustomIcons1.user),
                     labelText: "Name",
                     labelStyle: TextStyle(fontFamily: 'Roboto'),
                     border: new OutlineInputBorder(
@@ -140,7 +143,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     decoration: InputDecoration(
                       labelText: "Phone Number",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
-                      prefixIcon: Icon(Icons.phone),
+                      prefixIcon: Icon(CustomIcons1.phone),
                       border: new OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -163,7 +166,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     decoration: InputDecoration(
                       labelText: "Username",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
-                      prefixIcon: Icon(Icons.person),
+                      prefixIcon: Icon(CustomIcons1.at),
                       border: new OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -184,7 +187,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   padding: EdgeInsets.fromLTRB(25, 0, 0, 30),
                   child: TextFormField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.email),
+                      prefixIcon: Icon(CustomIcons1.email),
                       labelText: "Email",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
                       border: new OutlineInputBorder(
@@ -207,7 +210,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   padding: EdgeInsets.fromLTRB(25, 0, 0, 30),
                   child: TextFormField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.enhanced_encryption),
+                      prefixIcon: Icon(Icons.fingerprint),
                       labelText: "Password",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
                       border: new OutlineInputBorder(

@@ -93,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
         elevation: 0,
         child: new Row(
           children: <Widget>[
-            new Icon(Icons.group_work, color: Colors.black54),
+            new Icon(CustomIcons1.google, color: Colors.black54),
             new Text("    Sign in with Google",
                 style: TextStyle(color: primaryBlack)),
           ],
