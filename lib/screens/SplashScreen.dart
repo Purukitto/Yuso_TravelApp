@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:yuso/screens/Auth/login.dart';
+import './auth/login.dart';
 import 'dart:async';
 import 'package:yuso/theme/colors.dart';
+import './auth/register.dart';
 
 class SplashScreenComp extends StatefulWidget {
   @override
@@ -13,10 +14,10 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 5),
+      Duration(seconds: 2),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (BuildContext context) => LoginPage(),
+          builder: (BuildContext context) => MainRegisterComp(),
         ),
       ),
     );
