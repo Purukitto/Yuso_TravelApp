@@ -1,6 +1,6 @@
 # Yusō - Your Daily Travel Companion
 
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/) [![GitHub issues](https://img.shields.io/github/issues/Purukitto/FloX_MusicPlayer?style=flat-square)](https://github.com/Purukitto/Yuso_NECHackathon/issues) 
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/)
 
 <br>
 
