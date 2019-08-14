@@ -147,17 +147,9 @@ class _LoginPageState extends State<LoginPage> {
           else{
             //temporary measure. this alert dialog box needs to be replaced by something
             //ISSUE
-
-
-
-
-
-
-
             _showDialog();
           }
-
-          
+         
         },
         padding: EdgeInsets.all(12),
         color: Color.fromRGBO(255, 222, 115, 1),
@@ -172,6 +164,7 @@ class _LoginPageState extends State<LoginPage> {
         child: new Row(
           children: <Widget>[
             new Icon(CustomIcons1.google),
+            Padding(padding: EdgeInsets.fromLTRB(10, 0, 10, 0),),
             new Text(
               "Sign in with Google",
               style: TextStyle(color: Colors.black),

@@ -173,6 +173,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   height: 60.0,
                   padding: EdgeInsets.fromLTRB(25, 0, 0, 30),
                   child: TextFormField(
+                    
                     decoration: InputDecoration(
                       labelText: "Username",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
@@ -219,6 +220,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   height: 60.0,
                   padding: EdgeInsets.fromLTRB(25, 0, 0, 30),
                   child: TextFormField(
+                    obscureText: true,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.enhanced_encryption),
                       labelText: "Password",
