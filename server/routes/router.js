@@ -54,14 +54,19 @@ router.get("/signin" , (req ,res) => {   //ISSUE: NO SECURITY. FIX!!!!!
         if(err != null){
             res.send("false");
         }else{
+            if(document[0]){
              if(document[0].email == email){              
                  res.send("true");
              }else{
                  res.send("false");
              }
+        }else{
+            res.send("false");
         }
+    }
     })
-})
+});
 
 
-module.exports = router;
+
+module.exports = router
