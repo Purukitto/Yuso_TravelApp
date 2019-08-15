@@ -17,6 +17,7 @@ class Index extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SplashScreenComp(),
+      //body: LoginPage(),
     );
   }
 }
