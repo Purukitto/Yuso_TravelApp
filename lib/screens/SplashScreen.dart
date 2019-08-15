@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import './auth/login.dart';
 import 'dart:async';
 import 'package:yuso/theme/colors.dart';
-import './auth/register.dart';
 
 class SplashScreenComp extends StatefulWidget {
   @override
@@ -17,7 +16,6 @@ class _SplashScreenCompState extends State<SplashScreenComp> {
       Duration(seconds: 2),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          
           builder: (BuildContext context) => LoginPage(),
         ),
       ),

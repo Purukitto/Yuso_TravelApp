@@ -10,17 +10,14 @@ The Register Component consists of:
 
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:yuso/screens/home/home.dart' as prefix0;
+import 'package:yuso/screens/Auth/login.dart';
 import 'dart:core';
-import '../home//home.dart';
-
-
+import 'package:yuso/assets/icons/custom_icons1_icons.dart';
+import 'package:yuso/theme/colors.dart';
 
 //class to handle POST requests i.e. serialization and deserialization
 class PostReq {
-  
   //declare here
   String username;
   String name;
@@ -32,46 +29,44 @@ class PostReq {
   PostReq({this.username, this.email, this.name, this.password, this.ph});
 
   //serialize here
-  Map toMap(){
-    
-    var map = new Map<String , dynamic>();
+  Map toMap() {
+    var map = new Map<String, dynamic>();
     map['username'] = username;
     map['name'] = name;
     map['email'] = email;
     map['password'] = password;
     map['ph'] = ph;
 
-    return map; 
-   
+    return map;
   }
 
   //unserialize here
-  factory PostReq.fromjson(Map<String , dynamic>json) {
+  factory PostReq.fromjson(Map<String, dynamic> json) {
     return PostReq(
-      username : json['username'],
-      email : json['email'],
-      name : json['name'],
-      password : json['password'],
-      ph : json['ph'],
+      username: json['username'],
+      email: json['email'],
+      name: json['name'],
+      password: json['password'],
+      ph: json['ph'],
     );
   }
 }
 
 // Finally Make the damn request, please
 //check readme regarding routing. fuss involved
-Future<String> sendRegisterDetails(String _host , String _path, {Map body} ) async{
-  return http.post(Uri.http("localhost:3333", "register" ) , body: body)
-             .then((http.Response response){
-               
-               int statusCode = response.statusCode;
+Future<String> sendRegisterDetails(String _host, String _path,
+    {Map body}) async {
+  return http
+      .post(Uri.http("localhost:3333", "register"), body: body)
+      .then((http.Response response) {
+    int statusCode = response.statusCode;
 
-               if(statusCode < 200 || statusCode > 400 ){
-                 throw new Exception("Error while posting info at sendRegisterDetails");
-               }
+    if (statusCode < 200 || statusCode > 400) {
+      throw new Exception("Error while posting info at sendRegisterDetails");
+    }
 
-               return ((response.body));
-             });
-
+    return ((response.body));
+  });
 }
 
 class MainRegisterComp extends StatefulWidget {
@@ -82,7 +77,6 @@ class MainRegisterComp extends StatefulWidget {
 }
 
 class MainRegisterCompState extends State<MainRegisterComp> {
-  
   final _formKey = GlobalKey<FormState>();
 
   //we define controllers to handle text in textformfields
@@ -94,13 +88,8 @@ class MainRegisterCompState extends State<MainRegisterComp> {
   var _host = "localhost:8000";
   var _path = "/register";
 
-
   @override
   Widget build(BuildContext context) {
-
-
-
-
     return new GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
@@ -124,12 +113,14 @@ class MainRegisterCompState extends State<MainRegisterComp> {
               ),
               Center(
                   child: Container(
+                //TODO: Padding
                 width: 230.0,
                 height: 60.0,
                 padding: EdgeInsets.fromLTRB(25, 0, 0, 20),
+                //TODO: Make a row to make all childs
                 child: TextFormField(
                   decoration: InputDecoration(
-                    prefixIcon: Icon(Icons.account_circle),
+                    prefixIcon: Icon(CustomIcons1.user),
                     labelText: "Name",
                     labelStyle: TextStyle(fontFamily: 'Roboto'),
                     border: new OutlineInputBorder(
@@ -153,7 +144,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     decoration: InputDecoration(
                       labelText: "Phone Number",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
-                      prefixIcon: Icon(Icons.phone),
+                      prefixIcon: Icon(CustomIcons1.phone),
                       border: new OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -177,7 +168,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     decoration: InputDecoration(
                       labelText: "Username",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
-                      prefixIcon: Icon(Icons.person),
+                      prefixIcon: Icon(CustomIcons1.at),
                       border: new OutlineInputBorder(
                         borderSide: BorderSide.none,
                         borderRadius: BorderRadius.all(
@@ -198,7 +189,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   padding: EdgeInsets.fromLTRB(25, 0, 0, 30),
                   child: TextFormField(
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.email),
+                      prefixIcon: Icon(CustomIcons1.email),
                       labelText: "Email",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
                       border: new OutlineInputBorder(
@@ -222,7 +213,7 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   child: TextFormField(
                     obscureText: true,
                     decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.enhanced_encryption),
+                      prefixIcon: Icon(Icons.fingerprint),
                       labelText: "Password",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
                       border: new OutlineInputBorder(
@@ -248,28 +239,28 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                       color: Color.fromRGBO(248, 234, 192, 1),
                       width: 2.5,
                     ),
-                     
-                     
-                     //create the post request dart object
-                     onPressed: () async {
-                      PostReq newPost = new PostReq(username: usernameController.text, password: passwordController.text,
-                                               email: emailController.text, name: nameController.text, ph: phController.text,
-                      
-                     );
-                       
-                       //call the make request function
-                       String res = await sendRegisterDetails(_host, _path , body: newPost.toMap());
-                       
-                       if(res == "Successfully added"){
+
+                    //create the post request dart object
+                    onPressed: () async {
+                      PostReq newPost = new PostReq(
+                        username: usernameController.text,
+                        password: passwordController.text,
+                        email: emailController.text,
+                        name: nameController.text,
+                        ph: phController.text,
+                      );
+
+                      //call the make request function
+                      String res = await sendRegisterDetails(_host, _path,
+                          body: newPost.toMap());
+
+                      if (res == "Successfully added") {
                         //change screens wherever u want
-                         Navigator.of(context).pushReplacement(
-                         MaterialPageRoute(
-                           builder: (BuildContext context) => Dummy(),
-                         )
-                      
-                       );
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (BuildContext context) => LoginPage(),
+                        ));
                       }
-                     },
+                    },
 
                     elevation: 0,
                     label: Text(
@@ -279,7 +270,27 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                     ),
                   ),
                 ),
-              )
+              ),
+              Container(
+                child: RaisedButton(
+                  elevation: 0,
+                  child: new Row(
+                    children: <Widget>[
+                      new Icon(CustomIcons1.google, color: Colors.black54),
+                      new Text("    Sign in with Google",
+                          style: TextStyle(color: primaryBlack)),
+                    ],
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  onPressed: () {
+                    Navigator.of(context).pushNamed(null);
+                  },
+                  padding: EdgeInsets.all(12),
+                  color: primaryYellow,
+                ),
+              ),
             ]),
           ),
         ),

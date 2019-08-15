@@ -95,11 +95,12 @@ class _LoginPageState extends State<LoginPage> {
         prefixIcon: const Icon(CustomIcons1.user),
         filled: true,
         hintText: 'Email',
+        hintStyle: TextStyle(color: primaryBlack),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(100.0)),
-        fillColor: Color.fromRGBO(255, 222, 115, 1),
+        fillColor: primaryYellow,
       ),
     );
 
@@ -108,32 +109,39 @@ class _LoginPageState extends State<LoginPage> {
       obscureText: true,
       controller: passController,
       decoration: InputDecoration(
-        prefixIcon: Icon(CustomIcons1.fingerprint),
+        prefixIcon: Icon(Icons.fingerprint),
         filled: true,
         hintText: 'Password',
+        hintStyle: TextStyle(color: primaryBlack),
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(100.0),
         ),
-        fillColor: Color.fromRGBO(255, 222, 115, 1),
+        fillColor: primaryYellow,
       ),
     );
 
-    final forgotLabel = FlatButton(
-      child: Text(
-        'Forgot password?',
-        style: TextStyle(color: Colors.black),
-      ),
-      onPressed: () {},
-    );
+    final forgotLabel = Padding(
+        padding: EdgeInsets.symmetric(horizontal: 80.0),
+        child: FlatButton(
+          child: Text(
+            'Forgot password?',
+            style: TextStyle(color: primaryBlack),
+          ),
+          onPressed: () {},
+        ));
 
     final loginButton = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 120.0),
-      child: RaisedButton(
-        elevation: 0,
+      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 100.0),
+      child: OutlineButton(
+        borderSide: BorderSide(
+          color: primaryYellow,
+          style: BorderStyle.solid,
+          width: 2.0,
+        ),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(5.0),
         ),
         onPressed: () async {//on press event handling done here
           GetReq newreq = new GetReq(email: emailController.text , password: passController.text,);
@@ -152,13 +160,13 @@ class _LoginPageState extends State<LoginPage> {
          
         },
         padding: EdgeInsets.all(12),
-        color: Color.fromRGBO(255, 222, 115, 1),
-        child: Text('Sign In', style: TextStyle(color: Colors.black)),
+        color: primaryWhite,
+        child: Text('Log In', style: TextStyle(color: primaryBlack)),
       ),
     );
 
     final googleSignIn = Padding(
-      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 70.0),
+      padding: EdgeInsets.symmetric(vertical: 16.0, horizontal: 50.0),
       child: RaisedButton(
         elevation: 0,
         child: new Row(
@@ -167,25 +175,24 @@ class _LoginPageState extends State<LoginPage> {
             Padding(padding: EdgeInsets.fromLTRB(10, 0, 10, 0),),
             new Text(
               "Sign in with Google",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: primaryBlack),
             ),
           ],
         ),
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(100),
         ),
         onPressed: () {
           Navigator.of(context).pushNamed(null);
         },
         padding: EdgeInsets.all(12),
-        color: Color.fromRGBO(255, 222, 115, 1),
+        color: primaryYellow,
       ),
     );
 
-    final signin = FlatButton(
-      child: Text(
-        "Don't have an account ?",
-        style: TextStyle(color: Colors.black),
+    final signin = Row(children: <Widget>[
+      new Container(
+        width: 50,
       ),
       onPressed: () {
         Navigator.of(context).pushReplacement(
@@ -194,35 +201,48 @@ class _LoginPageState extends State<LoginPage> {
           )
         );
       },
-    );
+      const Text("Don't have an account ?",
+          style: TextStyle(color: primaryBlack, fontWeight: FontWeight.bold)),
+      Padding(
+        padding: EdgeInsets.only(left: 0),
+        child: GestureDetector(
+          onTap: null,
+          child: Text(
+            " Sign up",
+            style: TextStyle(color: primaryYellow, fontWeight: FontWeight.bold),
+          ),
+        ),
+      ),
+    ]);
 
     return new GestureDetector(
-        onTap: () {
-          FocusScope.of(context).unfocus();
-        },
-        child: Scaffold(
-          backgroundColor: Colors.white,
-          body: Center(
-            child: ListView(
-              shrinkWrap: true,
-              padding: EdgeInsets.only(left: 24.0, right: 24.0),
-              children: <Widget>[
-                SizedBox(height: 40.0),
-                logo,
-                SizedBox(height: 70.0),
-                email,
-                SizedBox(height: 8.0),
-                password,
-                forgotLabel,
-                SizedBox(height: 0.0),
-                loginButton,
-                SizedBox(height: 0.0),
-                googleSignIn,
-                SizedBox(height: 15.0),
-                signin
-              ],
-            ),
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Center(
+          child: ListView(
+            shrinkWrap: true,
+            padding: EdgeInsets.only(left: 24.0, right: 24.0),
+            children: <Widget>[
+              SizedBox(height: 40.0),
+              logo,
+              SizedBox(height: 70.0),
+              email,
+              SizedBox(height: 8.0),
+              password,
+              forgotLabel,
+              SizedBox(height: 0.0),
+              loginButton,
+              SizedBox(height: 0.0),
+              googleSignIn,
+              SizedBox(height: 15.0),
+              signin
+            ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
