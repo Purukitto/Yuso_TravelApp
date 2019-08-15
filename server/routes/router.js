@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var axios = require('axios');
 var users = require("../models/userAuth");
+var mongoose = require('mongoose');
 
 
 //index router
@@ -46,5 +47,26 @@ router.post("/register" , (req , res) => {
 
 })
 
+router.get("/signin" , (req ,res) => {   //ISSUE: NO SECURITY. FIX!!!!!
+    var email = req.query.email;
+    var password = req.query.password;
+    users.find({password: password},(err , document) => {
+        if(err != null){
+            res.send("false");
+        }else{
+            if(document[0]){
+             if(document[0].email == email){              
+                 res.send("true");
+             }else{
+                 res.send("false");
+             }
+        }else{
+            res.send("false");
+        }
+    }
+    })
+});
 
-module.exports = router;
+
+
+module.exports = router
