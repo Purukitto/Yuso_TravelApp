@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:yuso/screens/Auth/login.dart';
+import 'package:yuso/components/slide_route.dart';
 import 'dart:core';
 import 'package:yuso/assets/icons/custom_icons1_icons.dart';
 import 'package:yuso/theme/colors.dart';
@@ -164,7 +165,6 @@ class MainRegisterCompState extends State<MainRegisterComp> {
                   height: 60.0,
                   padding: EdgeInsets.fromLTRB(25, 0, 0, 30),
                   child: TextFormField(
-                    
                     decoration: InputDecoration(
                       labelText: "Username",
                       labelStyle: TextStyle(fontFamily: 'Roboto'),
@@ -256,9 +256,8 @@ class MainRegisterCompState extends State<MainRegisterComp> {
 
                       if (res == "Successfully added") {
                         //change screens wherever u want
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (BuildContext context) => LoginPage(),
-                        ));
+                        Navigator.push(
+                            context, SlideRightRoute(page: LoginPage()));
                       }
                     },
 

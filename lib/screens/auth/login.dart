@@ -2,6 +2,7 @@ import '../home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:yuso/theme/colors.dart';
 import 'package:yuso/assets/icons/custom_icons1_icons.dart';
+import 'package:yuso/components/slide_route.dart';
 import './register.dart';
 import 'package:http/http.dart' as http;
 
@@ -149,10 +150,7 @@ class _LoginPageState extends State<LoginPage> {
           String msgFromServer =
               await lookforUser(_host, _path, body: newreq.toMap());
           if (msgFromServer == "true") {
-            Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (BuildContext context) => Dummy(),
-            ) //redirects to dummy on success. (replace)
-                );
+            Navigator.push(context, SlideRightRoute(page: Dummy()));
           } else {
             //temporary measure. this alert dialog box needs to be replaced by something
             //ISSUE
@@ -206,9 +204,8 @@ class _LoginPageState extends State<LoginPage> {
           ),
           GestureDetector(
             onTap: () {
-              Navigator.of(context).pushReplacement(MaterialPageRoute(
-                builder: (BuildContext context) => MainRegisterComp(),
-              ));
+              Navigator.push(
+                  context, SlideRightRoute(page: MainRegisterComp()));
             },
             child: Text(
               " Sign up",
