@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yuso/screens/social/social.dart';
 
 //dummy code . replace everything here . or better even delete it
 
@@ -10,8 +11,21 @@ class Dummy extends StatelessWidget {
         title: Text("Dummy Page"),
       ),
       body: Center(
-        child: Text("Replace/delete everything"),
+        child: RaisedButton(
+          onPressed: (){
+            social(context);
+          },
+          elevation: 10,
+                    textColor: Colors.white,
+                    
+                    color: Colors.red,
+                    padding: const EdgeInsets.all(8.0),
+                    child: new Text(
+                      "share",
+        )
+        
       ),
+    )
     );
   }
 }

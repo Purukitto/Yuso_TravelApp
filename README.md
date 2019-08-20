@@ -1,16 +1,16 @@
 # Yusō - Your Daily Travel Companion
 
-[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg?style=plastic)](https://github.com/996icu/996.ICU/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/)
 
 <br>
 
 
-Yusō, was built as a part of the project made for NEC Hackathon held on 24-25 August, 2019 at Gurugram.
+Yusō, was built as a collaborative project for enhancements in public transport.
 
 <br>
 
 
-#### Project Members: 
+#### Contributors: 
 
    * [Pranjal Datta](https://github.com/pranjaldatta)
 
