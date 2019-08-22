@@ -11,14 +11,8 @@ Yusō, was built as a collaborative project for enhancements in public transport
 
 
 #### Contributors: 
-
-   * [Pranjal Datta](https://github.com/pranjaldatta)
-
-   * [Pulkit Sambhavi Singh](https://github.com/Purukitto)
-
-   * [Aniket Sinha](https://github.com/aniketkishore100)
-
-   * [Akshat Joshi](https://github.com/AkshatJoshi2000)
+   
+   <table><tr><td align="center"><a href="https://github.com/Purukitto"><img src="https://avatars3.githubusercontent.com/u/49859368?s=460&v=4" width="100px;" alt="Pulkit Sambhavi Singh"/><br /><sub><b>Pulkit Sambhavi Singh</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=Purukitto" title="Code">💻</a></td><td align="center"><a href="https://github.com/pranjaldatta"><img src="https://avatars2.githubusercontent.com/u/42492630?s=460&v=4" width="100px;" alt="Pranjal Datta"/><br /><sub><b>Pranjal Datta</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=pranjaldatta" title="Code">💻</a></td><td align="center"><a href="https://github.com/aniketkishore100"><img src="https://avatars3.githubusercontent.com/u/41589624?s=460&v=4" width="100px;" alt="Aniket Sinha"/><br /><sub><b>Aniket Sinha</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=aniketkishore100" title="Code">💻</a></td><td align="center"><a href="https://github.com/AkshatJoshi2000"><img src="https://avatars3.githubusercontent.com/u/39386084?s=460&v=4" width="100px;" alt="Akshat Joshi"/><br /><sub><b>Akshat Joshi</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=AkshatJoshi2000" title="Code">💻</a></td></tr></table>
 
 <br>
 
@@ -44,10 +38,10 @@ Yusō, was built as a collaborative project for enhancements in public transport
 <br>
 
 #### How to Contribute?
-     
-     
-     
-   Fill by 8th August
+* Make sure that your changes do not conflict with the core files (changing file directories will require a change in all called paths)
+* Follow the original code structure
+* Refactoring contributions are welcome, explicitly mention "[Refractor]" in your pull request
+* Give a few days to review PRs, code reviews are welcome 
 
 <br>
 
