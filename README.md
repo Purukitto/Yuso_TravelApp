@@ -25,7 +25,7 @@ Yusō, was built as a collaborative project for enhancements in public transport
    
 <br>
 
-#### Steps to sync fork with master:
+#### Steps to sync branch with master:
     $ git checkout master
     $ git pull
 <br>
