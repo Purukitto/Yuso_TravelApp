@@ -10,8 +10,6 @@ the caching feature to increase functionality . So the structuring/routing will 
 import 'package:flutter/material.dart';
 import 'package:yuso/screens/Auth/login.dart' as login;
 import 'package:yuso/theme/colors.dart';
-import './auth/login.dart';
-import './auth/register.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 
 class Index extends StatelessWidget {
@@ -20,7 +18,7 @@ class Index extends StatelessWidget {
     return SplashScreen.navigate(
       name: 'lib/assets/static/splash.flr',
       next: login.LoginPage(),
-      until: () => Future.delayed(Duration(seconds: 5)),
+      //until: () => Future.delayed(Duration(seconds: 5)),
       startAnimation: 'intro',
       backgroundColor: primaryYellow,
       transitionsBuilder: (
