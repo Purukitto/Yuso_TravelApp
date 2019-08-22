@@ -60,7 +60,7 @@ flutter:
   assets:
     - lib/assets/static/logo_icon.png
     - lib/assets/static/logo_full.png
-    - lib/assets/static/splash.flr
+    - lib/assets/static/Yuso_Splash.flr
     
     
     

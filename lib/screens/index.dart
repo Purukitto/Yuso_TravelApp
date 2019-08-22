@@ -16,9 +16,11 @@ class Index extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen.navigate(
-      name: 'lib/assets/static/splash.flr',
+      name: 'lib/assets/static/Yuso_Splash.flr',
       next: login.LoginPage(),
-      //until: () => Future.delayed(Duration(seconds: 5)),
+      until: () => Future.delayed(Duration(seconds: 3)),
+      //TODO: Implement lazy load
+      //isLoading:
       startAnimation: 'intro',
       backgroundColor: primaryYellow,
       transitionsBuilder: (
