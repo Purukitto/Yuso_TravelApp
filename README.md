@@ -38,10 +38,10 @@ Yusō, was built as a collaborative project for enhancements in public transport
 <br>
 
 #### How to Contribute?
-     
-     
-     
-   Fill by 8th August
+* Make sure that your changes do not conflict with the core files (changing file directories will require a change in all called paths)
+* Follow the original code structure
+* Refactoring contributions are welcome, explicitly mention "[Refractor]" in your pull request
+* Give a few days to review PRs, code reviews are welcome 
 
 <br>
 
