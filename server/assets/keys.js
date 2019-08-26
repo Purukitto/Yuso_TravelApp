@@ -1,5 +1,5 @@
-var mongoUsername = "pranjaldatta";
-var mongoPass = "cU7E3wBIp6zwWITQ";
+var mongoUsername = ""; //enter mongoUsername here
+var mongoPass = "";   //enter pass
 
 //replace <password> with password for given username
 const mongouri = "mongodb+srv://pranjaldatta:"+mongoPass+"@yusodb-qus7o.mongodb.net/test?retryWrites=true&w=majority";
