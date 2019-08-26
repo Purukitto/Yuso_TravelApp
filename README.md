@@ -66,8 +66,3 @@ Open the terminal in this directory then enter the following commands in the ter
 <br>
 
 ![alt text](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/git_assests/return%200.png "Team Return 0;")
-
-
-
-
-
