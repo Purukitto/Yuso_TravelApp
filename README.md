@@ -1,13 +1,13 @@
 # Yusō - Your Daily Travel Companion
 
-[![Issues](https://img.shields.io/github/issues/Purukitto/Yuso_TravelApp?style=flat-square)](https://github.com/Purukitto/Yuso_TravelApp/issues) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/)
+[![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/Purukitto/Yuso_NECHackathon/blob/master/LICENSE)  [![LANGUAGE](https://img.shields.io/static/v1?label=Language&message=Dart&color=blue)](https://dart.dev/)   [![FRAMEWORK](https://img.shields.io/static/v1?label=Framework&message=Flutter&color=blue)](https://flutter.dev/) [![Issues](https://img.shields.io/github/issues/Purukitto/Yuso_TravelApp?style=flat-square)](https://github.com/Purukitto/Yuso_TravelApp/issues)
 <br>
 
 Yusō, was built as a collaborative project for enhancements in public transport.
 
 <br>
 
-## `//CURRENTLY UNDER DEVELOPMENT`
+## `CURRENTLY UNDER DEVELOPMENT`
 
 <br>
 
