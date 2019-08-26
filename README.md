@@ -12,28 +12,7 @@ Yusō, was built as a collaborative project for enhancements in public transport
 
 #### Contributors: 
    
-   <table><tr><td align="center"><a href="https://github.com/Purukitto"><img src="https://avatars3.githubusercontent.com/u/49859368?s=460&v=4" width="100px;" alt="Pulkit Sambhavi Singh"/><br /><sub><b>Pulkit Sambhavi Singh</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=Purukitto" title="Code">💻</a></td><td align="center"><a href="https://github.com/pranjaldatta"><img src="https://avatars2.githubusercontent.com/u/42492630?s=460&v=4" width="100px;" alt="Pranjal Datta"/><br /><sub><b>Pranjal Datta</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=pranjaldatta" title="Code">💻</a></td><td align="center"><a href="https://github.com/aniketkishore100"><img src="https://avatars3.githubusercontent.com/u/41589624?s=460&v=4" width="100px;" alt="Aniket Sinha"/><br /><sub><b>Aniket Sinha</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=aniketkishore100" title="Code">💻</a></td><td align="center"><a href="https://github.com/AkshatJoshi2000"><img src="https://avatars3.githubusercontent.com/u/39386084?s=460&v=4" width="100px;" alt="Akshat Joshi"/><br /><sub><b>Akshat Joshi</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=AkshatJoshi2000" title="Code">💻</a></td></tr></table>
-
-<br>
-
-
-#### Cheat Sheet:  
-    
-    
-   [Git Cheat Sheet](https://drive.google.com/open?id=1B_3exC66R9YMS6vmzBYhjqoEA-SHobgm)
-   
-   
-<br>
-
-#### Steps to sync branch with master:
-    $ git checkout master
-    $ git pull
-<br>
-
- #### Fonts:  
-   ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
-   ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
-   ##### Poster Font : [Bebas Neue](https://www.fonts.com/font/flat-it/bebas-neue)
+   <table><tr><td align="center"><a href="https://github.com/Purukitto"><img src="https://avatars3.githubusercontent.com/u/49859368?s=460&v=4" width="100px;" alt="Pulkit Sambhavi Singh"/><br /><sub><b>Pulkit Sambhavi Singh</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=Purukitto" title="Code">💻</a></td><td align="center"><a href="https://github.com/pranjaldatta"><img src="https://avatars2.githubusercontent.com/u/42492630?s=460&v=4" width="100px;" alt="Pranjal Datta"/><br /><sub><b>Pranjal Datta</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=pranjaldatta" title="Code">💻</a></td><td align="center"><a href="https://github.com/aniketkishore100"><img src="https://avatars3.githubusercontent.com/u/41589624?s=460&v=4" width="100px;" alt="Aniket Sinha"/><br /><sub><b>Aniket Sinha</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=aniketkishore100" title="Code">💻</a></td><td align="center"><a href="https://github.com/AkshatJoshi2000"><img src="https://avatars3.githubusercontent.com/u/39386084?s=460&v=4" width="100px;" alt="Akshat Joshi"/><br /><sub><b>Akshat Joshi</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=AkshatJoshi2000" title="Code">💻</a></td></tr></table>   
    
 <br>
 
@@ -45,27 +24,40 @@ Yusō, was built as a collaborative project for enhancements in public transport
 
 <br>
 
-
-#### File Oraganisation
-   The main.dart file, should hold very little code and only serve as an overview to the app.
-   ##### SubFolders
-   * The **theme folder** just contains a style.dart with the app theme
-   * The **services folder** holds the web APIs and native interaction code
-   * The **components folder** has custom widgets to be used in multiple different screens
-   * The **models folder** has files each with a custom class of an object widely used throughout the app
-   * The **screens folder** holds many different folders, each of which corresponds to a different screen of the app. Each screen folder holds two things: a primary screen file which serves to organize each component, and a “components” folder which holds each component in its own separate file. Any piece of a screen more complicated then a few widgets should be its own component.
-
+#### Steps to sync branch with master (Contributors only):
+    $ git checkout master
+    $ git pull
+    
 <br>
 
-#### Links
+#### Steps to sync fork with master (Open Source Contributors):
+If you fork is behind from the master project you can do these to get the latest version in the master branch of your fork.
+First go to your(cloned) project folders.
+Open the terminal in this directory then enter the following commands in the terminal:
+ - Configuring a remote for fork
+       
+       $ git remote -v 
+       //Lists the current configured remote repository for your fork//
+       $ git remote add upstream https://github.com/Purukitto/Yuso_TravelApp.git
+       //Specifies a new remote upstream repository that will be synced with the fork//
+       $ git remote -v
+       //Should show the newly made remote *upstream* along with your previous remote//
+       
+ - Syncing the fork
+       
+       $ git fetch upstream
+       //Fetch the branches and their respective commits from the upstream repository//
+       $ git checkout master
+       //Switches to local master branch//
+       $ git merge upstream/master
+       //Merges the upstearm remote (Main repo) into your local fork//
+       
+<br>
 
-* [Graphic Resources](https://drive.google.com/drive/folders/1cJyXY8Wvlw7dEBQykcS5a6TtYTesiKyw?usp=sharing)
-* [Presentation](https://docs.google.com/presentation/d/1hGLFUXPIqi_eur9nyXJhKyZY4ZxA-Uyk2JQuTGpkjhA/edit?usp=sharing)
-* [Reference Links](https://docs.google.com/document/d/1ugVcn31lTHhLqBh1FfODrzgixuKSxQV_T2znUJAH17g/edit?usp=sharing)
-* [Dart Docs](https://dart.dev/guides)
-* [Flutter Docs](https://flutter.dev/docs)
-
-
+ #### Fonts Used:
+   ##### UI Text : [Roboto (Light)](https://fonts.google.com/specimen/Roboto)
+   ##### Text Fields : [Open Sans (Light)](https://fonts.google.com/specimen/Open+Sans)
+   ##### Poster Font : [Bebas Neue](https://www.fonts.com/font/flat-it/bebas-neue)
 
 <br>
 <br>
