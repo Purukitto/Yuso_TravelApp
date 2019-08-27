@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yuso/screens/payments/payments.dart';
 import 'screens/index.dart';
 
 void main() {
@@ -15,7 +16,8 @@ class Yuso extends StatelessWidget {
       title: 'Yuso',
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
-        "/": (BuildContext context) => Index(),
+        //TODO:change to index()
+        "/": (BuildContext context) => Payment(),
       },
     );
   }
