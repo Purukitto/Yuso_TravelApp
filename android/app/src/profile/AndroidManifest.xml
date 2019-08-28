@@ -4,4 +4,14 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
+
+      <uses-sdk android:minSdkVersion="19" />
+
+    <application>
+        <activity
+            android:name="com.razorpay.CheckoutActivity"
+            android:label="Razorpay Checkout" >
+        </activity>
+    </application>
+    
 </manifest>
