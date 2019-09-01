@@ -13,7 +13,7 @@ Yusō, was built as a collaborative project for enhancements in public transport
 <br>
 
 
-### Team: 
+### Core Team: 
    
    <table><tr><td align="center"><a href="https://github.com/Purukitto"><img src="https://avatars3.githubusercontent.com/u/49859368?s=460&v=4" width="100px;" alt="Pulkit Sambhavi Singh"/><br /><sub><b>Pulkit Sambhavi Singh</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=Purukitto" title="Code">💻</a></td><td align="center"><a href="https://github.com/pranjaldatta"><img src="https://avatars2.githubusercontent.com/u/42492630?s=460&v=4" width="100px;" alt="Pranjal Datta"/><br /><sub><b>Pranjal Datta</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=pranjaldatta" title="Code">💻</a></td><td align="center"><a href="https://github.com/aniketkishore100"><img src="https://avatars3.githubusercontent.com/u/41589624?s=460&v=4" width="100px;" alt="Aniket Sinha"/><br /><sub><b>Aniket Sinha</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=aniketkishore100" title="Code">💻</a></td><td align="center"><a href="https://github.com/AkshatJoshi2000"><img src="https://avatars3.githubusercontent.com/u/39386084?s=460&v=4" width="100px;" alt="Akshat Joshi"/><br /><sub><b>Akshat Joshi</b></sub></a><br /><a href="https://github.com/Purukitto/Yuso_NECHackathon/commits?author=AkshatJoshi2000" title="Code">💻</a></td></tr></table>   
    
