@@ -1,28 +1,32 @@
 var express = require("express");
-var path = require('path');
+var path = require("path");
 var router = require("./routes/router.js");
-var mongoClient = require('mongodb').MongoClient;
-var mongodriver = require('mongodb');
-var mongoose = require('mongoose');
-const assert = require('assert');
+var mongoClient = require("mongodb").MongoClient;
+var mongodriver = require("mongodb");
+var mongoose = require("mongoose");
+const assert = require("assert");
 var keys = require("./assets/keys");
 var users = require("./models/userAuth");
-var bodyParser = require('body-parser');
+var bodyParser = require("body-parser");
 
 var app = express();
 
-mongoose.connect(keys.mongouri ,{useNewUrlParser: true}, (err) => {
+mongoose.connect(
+  keys.mongouri,
+  { useNewUrlParser: true },
+  err => {
     console.log(err || "connected successfully!");
-})
+  }
+);
 
 var port = 8000;
 
-app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.urlencoded({ extended: false }));
 
-app.listen(port , () => {
-    console.log("Server Running at Port : " , port);
-})
+app.listen(port, () => {
+  console.log("Server Running at Port : ", port);
+});
 
-app.use("/" , router);
+app.use("/", router);
 
 module.exports = app;
